@@ -1,7 +1,18 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    /*
+    changed the base structure of the app 
+    and added aliases to avoid ../../../../ ... pattern
+    */
+    "baseUrl": "src",
+    "paths": {
+      "@app/*": ["app/*"],
+      "@app/core/*": ["app/core/*"],
+      "@app/shared/*": ["app/shared/*"],
+      "@assets/*": ["assets/*"],
+      "@env/*": ["environments/*"]
+    },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
