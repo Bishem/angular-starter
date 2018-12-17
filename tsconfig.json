@@ -11,7 +11,8 @@
       "@app/core/*": ["app/core/*"],
       "@app/shared/*": ["app/shared/*"],
       "@assets/*": ["assets/*"],
-      "@env/*": ["environments/*"]
+      "@env/*": ["environments/*"],
+      "@styles/*": ["styles/*"]
     },
     "outDir": "./dist/out-tsc",
     "sourceMap": true,

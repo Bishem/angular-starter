@@ -1,24 +1,24 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { CoreRoutingModule } from './core-routing.module';
-import { CoreComponent } from './layout/core/core.component';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { LayoutComponent } from './layout/layout/layout.component';
+import { SharedModule } from '@app/shared/shared.module';
+import { HeaderComponent } from './layout/header/header.component';
+import { NavbarComponent } from './layout/navbar/navbar.component';
+import { FooterComponent } from './layout/footer/footer.component';
 
 @NgModule({
   imports: [
-  CommonModule,
+    SharedModule,
     CoreRoutingModule,
   ],
   declarations: [
-    CoreComponent,
+    LayoutComponent,
     HeaderComponent,
     NavbarComponent,
     FooterComponent,
   ],
   exports: [
-    CoreComponent
+    LayoutComponent
   ]
 })
 export class CoreModule { }

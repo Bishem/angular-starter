@@ -4,12 +4,12 @@ import { AppComponent } from './app.component';
 import { CoreModule } from '@app/core/core.module';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
   imports: [
     BrowserModule,
     CoreModule
+  ],
+  declarations: [
+    AppComponent
   ],
   bootstrap: [AppComponent]
 })
