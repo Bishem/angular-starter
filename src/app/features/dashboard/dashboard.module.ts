@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { SharedModule } from '@app/shared/shared.module';
 import { DashboardComponent } from './layout/dashboard/dashboard.component';
-import { DetailsComponent } from './layout/details/details.component';
+import { HeroListComponent } from './components/hero-list/hero-list.component';
 
 @NgModule({
   imports: [
@@ -11,7 +11,7 @@ import { DetailsComponent } from './layout/details/details.component';
   ],
   declarations: [
     DashboardComponent,
-    DetailsComponent
+    HeroListComponent
   ]
 })
 export class DashboardModule { }

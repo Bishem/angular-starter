@@ -11,6 +11,8 @@ import { CoreModule } from '@app/core/core.module';
   declarations: [
     AppComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
